@@ -1,0 +1,201 @@
+/* =====================================================
+   NavBar 1 – Reference Style Sheet
+   Purpose:
+   - Flexbox-based site navigation layout
+   - Desktop-first reference implementation
+   - Framework-free (HTML5 + CSS3 only)
+   ===================================================== */
+
+
+/* -----------------------------------------------------
+   Google Fonts
+   - Montserrat is the primary UI font
+   - Roboto is imported for optional future use
+   ----------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+:root {
+    --bg-color: #24252a;
+    --alt-bg-color: #0f172a;
+    --transparent-bg: rgba(255, 255, 255, 0.05);
+    /* --text-color: #edf0f1; */
+    --text-color: #38bdf8;
+    --hover-color: orange;
+    --secondary-hover-color: #0088a9;
+    --button-color-secondary: rgb(0, 136, 169, 1);
+    --contrast: rgba(189, 189, 189, 1);
+}
+
+
+/* -----------------------------------------------------
+   Global Reset
+   - Removes default browser spacing
+   - Ensures predictable box sizing
+   ----------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-color: var(--hover-color) #000;
+}
+
+/* -----------------------------------------------------
+   Page Layout
+   - Flex column allows sticky footer behavior
+   ----------------------------------------------------- */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--alt-bg-color);
+}
+
+main p {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+/* -----------------------------------------------------
+   Global Typography
+   - Applies UI font to common interactive elements
+   ----------------------------------------------------- */
+header a,
+header li,
+header button {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* -----------------------------------------------------
+   Header/Navigation
+   ----------------------------------------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 10%;
+    margin-bottom: 2rem;
+}
+
+nav,
+footer {
+    background-color: var(--transparent-bg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+.brand h1 a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__links li a {
+    position: relative;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--contrast);
+    transition: 0.3s;
+}
+
+.nav__links li a:hover,
+.login__sign-up a:hover {
+    color: var(--text-color);
+    text-shadow: 0 0 10px var(--text-color);
+}
+
+.login__sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__sign-up a {
+    margin-right: 1rem;
+}
+
+/* -----------------------------------------------------
+   Primary Button Base
+   - Reusable button utility class
+   ----------------------------------------------------- */
+
+.btn {
+    display: inline-block;
+    color: #000;
+    background: var(--text-color);
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.5;
+    box-shadow: 0 0 15px var(--text-color);
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    color: #fff;
+}
+
+
+/* Button hover state */
+.btn:hover {
+    background: #0aa9f3;
+    box-shadow: 0 0 25px #0aa9f3;
+}
+
+/* =====================================================
+   Main Content
+   ===================================================== */
+
+/* -----------------------------------------------------
+   Centered main content placeholder
+   - Demonstrates layout behavior with sticky footer
+   ----------------------------------------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto 0;
+    color: #fff;
+}
+
+/* =====================================================
+   Footer
+   ===================================================== */
+
+
+/* -----------------------------------------------------
+   Sticky Footer
+   - margin-top:auto pushes footer to bottom
+   ----------------------------------------------------- */
+footer {
+    color: var(--text-color);
+    margin-top: auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+}
