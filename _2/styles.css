@@ -49,6 +49,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--alt-bg-color);
+    font-family: Roboto, sans-serif;
 }
 
 main p {
