@@ -75,21 +75,25 @@ header button {
    Header/Navigation
    ----------------------------------------------------- */
 
-   
-   nav {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       width: 100%;
-       padding: 1rem 10%;
-       margin-bottom: 2rem;
-    }
-    
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 10%;
+    margin-bottom: 2rem;
+}
+
 nav,
 footer {
     background-color: var(--transparent-bg);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
+}
+
+.brand {
+    margin-right: auto;
 }
 
 .brand h1 a {
@@ -128,6 +132,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 2rem;
 }
 
 .login__sign-up a {
@@ -204,4 +209,3 @@ footer {
     align-items: center;
     font-family: Roboto, sans-serif;
 }
-
