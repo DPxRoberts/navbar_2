@@ -3,24 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
+    <title>HTML/CSS Navigation Example #3</title>
+    <meta name="description" content="HTML/CSS Navigation Example #3" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <div class="brand">
-          <h1><a class="logo" href="#">Nav_1</a></h1>
+        <div class="nav__group">
+          <div class="brand">
+            <h1><a class="logo" href="#">Nav_3</a></h1>
+          </div>
+          <ul class="nav__links">
+            <li><a href="/_1/index.html">Nav_1</a></li>
+            <li><a href="/_2/index.html">Nav_2</a></li>
+            <li><a class="active" href="/_3/index.html">Nav_3</a></li>
+            <li><a href="/_4/index.html">Nav_4</a></li>
+            <li><a href="/_5/index.html">Nav_5</a></li>
+          </ul>
         </div>
-        <ul class="nav__links">
-          <li><a href="/_1/index.html">Nav_1</a></li>
-          <li><a href="/_2/index.html">Nav_2</a></li>
-          <li><a class="active" href="/_3/index.html">Nav_3</a></li>
-          <li><a href="/_4/index.html">Nav_4</a></li>
-          <li><a href="/_5/index.html">Nav_5</a></li>
-        </ul>
         <div class="login__sign-up">
           <a href="">Login</a>
           <button class="btn btn-primary">Sign Up</button>

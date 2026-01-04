@@ -75,16 +75,22 @@ header button {
    Header/Navigation
    ----------------------------------------------------- */
 
-   
-   nav {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       width: 100%;
-       padding: 1rem 10%;
-       margin-bottom: 2rem;
-    }
-    
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 10%;
+    margin-bottom: 2rem;
+}
+
+nav .nav__group {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 nav,
 footer {
     background-color: var(--transparent-bg);
@@ -204,4 +210,3 @@ footer {
     align-items: center;
     font-family: Roboto, sans-serif;
 }
-
