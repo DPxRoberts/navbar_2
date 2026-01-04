@@ -75,15 +75,16 @@ header button {
    Header/Navigation
    ----------------------------------------------------- */
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 1rem 10%;
-    margin-bottom: 2rem;
-}
-
+   
+   nav {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 100%;
+       padding: 1rem 10%;
+       margin-bottom: 2rem;
+    }
+    
 nav,
 footer {
     background-color: var(--transparent-bg);
@@ -117,6 +118,10 @@ footer {
 .login__sign-up a:hover {
     color: var(--text-color);
     text-shadow: 0 0 10px var(--text-color);
+}
+
+.nav__links li a.active {
+    color: var(--text-color);
 }
 
 .login__sign-up {
